@@ -1,4 +1,4 @@
-package com.example.threaddemo.backup.synchronization;
+package com.example.threaddemo.backup.synchronization.AdderSubtractorUsingSynchronized;
 
 public class Subtractor implements Runnable{
     Count count;
@@ -10,7 +10,9 @@ public class Subtractor implements Runnable{
     @Override
     public void run() {
         for(int i = 0; i < 100000; i++){
-            count.val -= 1;
+            synchronized (count) {
+                count.val -= 1;
+            }
         }
     }
 }

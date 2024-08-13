@@ -1,4 +1,4 @@
-package com.example.threaddemo.backup.synchronization;
+package com.example.threaddemo.backup.synchronization.AdderSubtractorUsingSynchronized;
 
 public class Client {
     public static void main(String[] args) throws InterruptedException {
