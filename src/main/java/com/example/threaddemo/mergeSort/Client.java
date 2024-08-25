@@ -16,7 +16,9 @@ public class Client {
         Future<List<Integer>> sortedArrayFuture = executor.submit(sorter);
         System.out.println("lets go to cafeteria..");
 
+        System.out.println("now waiting for the sorting to be done");
         List<Integer> sortedArray = sortedArrayFuture.get(); // waiting for the result!
+        System.out.println("done sorting!");
         System.out.println(sortedArray);
         System.out.println(((ThreadPoolExecutor)executor).getLargestPoolSize());
     }

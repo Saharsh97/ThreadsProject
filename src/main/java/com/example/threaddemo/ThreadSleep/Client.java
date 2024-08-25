@@ -6,8 +6,9 @@ public class Client {
         Task task = new Task();
         Thread thread = new Thread(task);
         thread.start();
+
         System.out.println("main hitting cache...");
-        Thread.sleep(4000);
+        Thread.sleep(3000);
         System.out.println("main done!");
     }
 }

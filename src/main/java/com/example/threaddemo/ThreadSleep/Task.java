@@ -6,9 +6,7 @@ public class Task implements Runnable {
     public void run() {
         try {
             System.out.println(Thread.currentThread().getName() + " sending query to DB...");
-            System.out.println("waiting for DB response");
-            System.out.println("a = b");
-            Thread.sleep(7000);
+            Thread.sleep(9000);
             System.out.println(Thread.currentThread().getName() + " is done!");
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
